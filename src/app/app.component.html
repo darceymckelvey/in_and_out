@@ -1,3 +1,5 @@
+<h2>Variable from the child = {{val_from_child}}</h2>
+
 <app-students (event_to_send)="valFromChild($event)" [parent_student]="student" [title_from_parent]="title"></app-students>
 
 <router-outlet />

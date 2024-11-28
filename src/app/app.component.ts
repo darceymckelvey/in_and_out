@@ -9,12 +9,14 @@ import { Student } from './student';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'in_and_out';
+  title:string = 'in_and_out';
+  val_from_child: string = '';
 
   student:Student = {id: 1, name: "Burgers", age: 27};
 
   valFromChild(val:string) {
-    console.log(val, 'from parent');
+    console.log(val, 'value came from child');
+    this.val_from_child = val;
   }
 
 }
